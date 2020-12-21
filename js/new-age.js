@@ -38,5 +38,12 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+  
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
 
 })(jQuery); // End of use strict
